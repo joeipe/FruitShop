@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="FruitShop.API/FruitShop.API.csproj" />
+  <Project Path="FruitShop.Application/FruitShop.Application.csproj" />
+  <Project Path="FruitShop.Contracts/FruitShop.Contracts.csproj" />
+  <Project Path="FruitShop.Domain/FruitShop.Domain.csproj" />
+</Solution>
