@@ -27,12 +27,12 @@ namespace FruitShop.Application.CommandHandlers
 
             foreach (var line in request.request.Lines)
             {
-                var fruit = catalogue.Find(line.FruitCode);
+                var fruit = catalogue.Find(line!.FruitCode);
 
                 decimal lineTotal = 0;
-                lineTotal = orderCalculationService.CalculateLineTotal(fruit, line.Quantity);
+                lineTotal = orderCalculationService.CalculateLineTotal(fruit!, line.Quantity);
 
-                var unit = fruit.Unit == SellingUnit.Kilogram ? "kg" : "item";
+                var unit = fruit!.Unit == SellingUnit.Kilogram ? "kg" : "item";
 
                 pricedLines.Add(new PricedOrderLineResponse(fruit.Code, line.Quantity, unit, lineTotal));
             }
