@@ -3,4 +3,5 @@
   <Project Path="FruitShop.Application/FruitShop.Application.csproj" />
   <Project Path="FruitShop.Contracts/FruitShop.Contracts.csproj" />
   <Project Path="FruitShop.Domain/FruitShop.Domain.csproj" />
+  <Project Path="FruitShop.UnitTests/FruitShop.UnitTests.csproj" Id="c3b44d28-b752-4cbc-802a-cbd57beefed6" />
 </Solution>
